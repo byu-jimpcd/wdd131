@@ -32,6 +32,10 @@ main {
     padding: 20px;
 }
 
+header {
+    width: 100%;
+}
+
 h1 {
     text-align: center;
     margin: 25px 0;
@@ -104,7 +108,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-.country{
+.country {
     display: grid;
     grid-template-columns: 150px 1fr;
     gap: 20px;
