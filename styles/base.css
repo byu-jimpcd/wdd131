@@ -48,6 +48,10 @@
     margin-bottom: 15px;
 }
 
+header {
+    width: 100%;
+}
+
 #course-title {
     background-color: var(--primary-color);
     display: block;
