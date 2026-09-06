@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Jim</title>
+    <meta name="description" content="Page created to follow WDD131 lessons throughout the weeks">
+    <meta name="author" content="Jim Cueva">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>wdd 131 - Cueva</h1>
+    <header>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jim-cueva-3810ab417/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/7?lang=eng">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Jim Cueva</h1>
+
+        <div class="cards">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="aboutme">
+
+                    <p>
+                        My name is Jim, I am 25 years old, and I am from Cusco, Peru.
+                        I like playing and watching soccer, and I like to work out.
+                        I have been working out for approximately 2 years.
+                        I am studying Software Development, and I look forward to
+                        learning a lot from this course.
+                    </p>
+
+                    <img src="images/profile.jpeg" alt="Jim Cueva">
+
+                </div>
+
+                <h3>Cusco, Perú</h3>
+
+                <div class="country">
+
+                    <figure>
+                        <img src="images/peruflag.svg" alt="Flag of Peru">
+                        <figcaption>Official Flag of Perú</figcaption>
+                    </figure>
+
+                    <p>
+                        Peru is a megadiverse country in western South America known for its rich indigenous history,
+                        varied geography, and
+                        world-renowned gastronomy.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">MDN Web Docs</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+
+                </ul>
+
+            </section>
+        </div>
+
+    </main>
+    <footer>
+
+        <p>©️ || <span id="currentyear"></span> || Jim Cueva || Cusco, Perú</p>
+
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
+
 </html>

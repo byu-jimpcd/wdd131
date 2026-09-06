@@ -1,0 +1,5 @@
+.parent {
+    display: grid;
+    grid-template: auto 1fr 1fr auto / auto auto auto auto;
+}
+
