@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #8B0000;
+    --secondary-color: #ffffff;
+    --accent1-color: #ffffff;
+    --accent2-color: #000000;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    min-height: 0;
+}
+
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    color: var(--accent2-color);
+    padding: 20px;
+}
+
+.data h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.data dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    row-gap: 8px;
+}
+
+.data dt {
+    font-weight: bold;
+}
+
+
+.weather h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.weather dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    row-gap: 8px;
+}
+
+.weather dt {
+    font-weight: bold;
+}
+
+.weather img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.data dl,
+.weather dl {
+    width: 250px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        display: flex;
+    }
+
+    .hero {
+        position: relative;
+        flex: 1;
+    }
+
+    .hero img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    .weather h2::after {
+        content: "🌤️";
+    }
+
+    .data,
+    .weather {
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        width: 320px;
+
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .data h2,
+    .weather h2 {
+        background-color: var(--primary-color);
+        color: var(--accent1-color);
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 12px 20px;
+        margin: 5px 0px 15px -35px;
+    }
+}
