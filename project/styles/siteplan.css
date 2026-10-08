@@ -1,0 +1,43 @@
+body {
+    background-color: #F5F1E8;
+    color: #4B2E2A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #4B2E2A;
+    color: #FFFFFF;
+    border-bottom: 5px solid #D9A441;
+}
+
+h2 {
+    color: #4B2E2A;
+}
+
+.wireframe {
+    border: 2px solid #4B2E2A;
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    background-color: #FFFFFF;
+}
+
+.wireframe div {
+    border: 1px solid #4B2E2A;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.mobile-wireframe {
+    max-width: 400px;
+}
+
+.desktop-wireframe {
+    max-width: 900px;
+}
