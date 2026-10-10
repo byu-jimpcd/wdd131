@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Jim Cueva">
+    <meta name="description"
+        content="Product review form page of Week 05 Assignment with goo design principles and specific requirements">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Product Review</h1>
+
+    </header>
+
+    <main>
+
+        <form action="review.html" method="get">
+
+            <label for="product">Product Name</label>
+
+            <select name="product" id="product" required>
+
+                <option value="" disabled selected>
+                    Select a Product...
+                </option>
+
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="rating" value="1" id="rating1" required>&star;</label>
+                <label><input type="radio" name="rating" value="2" id="rating2" required>&star;&star;</label>
+                <label><input type="radio" name="rating" value="3" id="rating3" required>&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="4" id="rating4"
+                        required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="5" id="rating5"
+                        required>&star;&star;&star;&star;&star;</label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Which features do you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="Durability" id="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use" id="easeOfUse">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance" id="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="Design" id="design">Design</label>
+            </fieldset>
+
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+
+        <p>©️ || <span id="currentyear"></span> || Jim Cueva || Cusco, Perú</p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
